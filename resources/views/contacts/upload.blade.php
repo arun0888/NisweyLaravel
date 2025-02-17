@@ -4,7 +4,7 @@
 <div class="card-body p-0">
 {!! Form::open(['route' => 'xml.upload', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
     @csrf
-    {!! Form::file('xml_file', ['required']) !!}
+    <input type="file" name="xml_file" accept=".xml" required>
     {!! Form::submit('Upload', ['class' => 'btn btn-primary']) !!}
 {!! Form::close() !!}
 </div>
