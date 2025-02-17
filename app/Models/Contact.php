@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Contact extends Model
 {
     public $table = 'contacts';
+    public $timestamps = true;
 
     public $fillable = [
         'name',
@@ -23,8 +24,6 @@ class Contact extends Model
         'name' => 'required|string|max:150',
         'phone' => 'required|string|max:100',
         'enable' => 'required',
-        'created_at' => 'required',
-        'updated_at' => 'required'
     ];
 
     

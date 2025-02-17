@@ -13,6 +13,6 @@
 <!-- Enable Field -->
 <div class="col-sm-12">
     {!! Form::label('enable', 'Enable:') !!}
-    <p>{{ $contact->enable }}</p>
+    <p>{{ ($contact->enable) ? 'Active' : Inactive }}</p>
 </div>
 
